@@ -1,5 +1,26 @@
 html, body {
-    color: white;
-    background-color: black;
-    font: 12px Arial;
+    color: black;
+    background-color: #333333;
+    font: 14px Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #999999;
+    height: 100%;
+    padding: 20px;
+    -webkit-box-shadow: 0px 2px 15px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 15px 10px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 15px 10px rgba(0,0,0,0.5);
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
 }

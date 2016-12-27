@@ -1,0 +1,17 @@
+{
+  "name": "bit101_lab",
+  "version": "1.0.0",
+  "description": "daily visual code experiments",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bit101/lab.git"
+  },
+  "author": "Keith Peters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bit101/lab/issues"
+  },
+  "homepage": "https://github.com/bit101/lab#readme"
+}
