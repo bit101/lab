@@ -1,4 +1,4 @@
 # lab
 Daily visual code experiments.
 
-[2016-12-27](2016/161227.html)
+[Here's where you want to go](https://bit101.github.io/lab/)
