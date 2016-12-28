@@ -1,4 +1,12 @@
-# lab
-Daily visual code experiments.
+# BIT-101 LAB
 
-[Here's where you want to go](https://bit101.github.io/lab/)
+## The Source
+You are here.
+
+## The Libs
+[bitlib](https://github.com/bit101/bitlib)
+
+[QuickSettings](https://github.com/bit101/quicksettings)
+
+## The Goods
+[Over this way](https://bit101.github.io/lab/)
