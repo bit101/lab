@@ -3,7 +3,7 @@
 ## The Source
 You are here.
 
-## The Libs
+## The Libraries
 [bitlib](https://github.com/bit101/bitlib)
 
 [QuickSettings](https://github.com/bit101/quicksettings)
