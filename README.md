@@ -1,12 +1,25 @@
 # BIT-101 LAB
+[Check out the live site](https://bit101.github.io/lab/)
 
-## The Source
+## Source
 You are here.
 
-## The Libraries
+## Libraries
+[bitlib](https://github.com/bit101/bitlib)
+[QuickSettings](https://github.com/bit101/quicksettings)
+
+## Support
+[BitCoin](https://www.coinbase.com/bit101)
+
+## Libraries
+
 [bitlib](https://github.com/bit101/bitlib)
 
 [QuickSettings](https://github.com/bit101/quicksettings)
 
-## The Goods
-[Over this way](https://bit101.github.io/lab/)
+## Resources
+[Coding Math](https://www.youtube.com/user/codingmath/)
+
+[Playing With Chaos](http://www.playingwithchaos.net/)
+
+[BIT-101](http://www.bit-101.com)
