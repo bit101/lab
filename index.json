@@ -1,20 +1,12 @@
-[
-  {
-    "name": "161227",
+{
+  "170101": {
     "categories": [
       "test"
     ]
   },
-  {
-    "name": "161226",
-    "categories": [
-      "test"
-    ]
-  },
-  {
-    "name": "161103",
+  "170102": {
     "categories": [
       "test"
     ]
   }
-]
+}

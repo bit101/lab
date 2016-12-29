@@ -1,10 +1,13 @@
 var Calendar = {
+    model: {},
+
     months: ["January", "February", "March",
         "April", "May", "June",
         "July", "August", "September",
         "October", "November", "December"],
 
-    create: function(year, parent) {
+    create: function(model, year, parent) {
+        this.model = model;
         var container = document.createElement("div");
         container.className = "calendar";
 
@@ -45,13 +48,14 @@ var Calendar = {
         if(index > 0 && !(index % 7)) {
             dateDiv.style.clear = "both";
         }
+        var title = this.formatDate(year, month, date);
         if(date >= 1 && date <= maxDate) {
-            dateDiv.dataset.date = this.formatDate(year, month, date);
             dateDiv.innerText = date;
-            if(bitlib.random.bool()) {
+            if(this.model[title]) {
+                dateDiv.dataset.date = title;
                 dateDiv.className += " active";
                 dateDiv.addEventListener("click", function(event) {
-                    alert("click: " + event.target.dataset.date);
+                    window.location.href = "dailies/" + event.target.dataset.date + ".html";
                 });
             }
         }
