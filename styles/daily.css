@@ -9,8 +9,11 @@ canvas {
 
 .home_button {
     position: absolute;
+    top: 5px;
+    left: 5px;
     z-index: 1000;
     background-color: black;
+    border: 1px solid white;
     color: white;
     padding: 3px 5px;
     font: 12px Arial;
