@@ -27,22 +27,27 @@ li {
 ul {
     padding: 0;
 }
+@media (max-width: 700px) {
+    .calendar {
+        width: 344px;
+    }
+}
 
-@media (max-width: 600px) {
+@media (min-width: 700px) {
+    .calendar {
+        width: 516px;
+    }
     .content {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
         width: auto;
     }
 }
-@media (min-width: 600px) {
-    .content {
-        width: 75%;
-        margin-left: 12.5%;
-        margin-right: 12.5%;
+@media (min-width: 1100px) {
+    .calendar {
+        width: 516px;
     }
-}
-@media (min-width: 1200px) {
+
     .content {
         width: 50%;
         margin-left: 25%;
@@ -52,12 +57,12 @@ ul {
 
 
 .content {
+    overflow: hidden;
     background-color: #999999;
-    height: 100%;
     padding: 20px;
-    -webkit-box-shadow: 0px 2px 15px 10px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 2px 15px 10px rgba(0,0,0,0.5);
-    box-shadow: 0px 2px 15px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.3);
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -65,4 +70,58 @@ a:link, a:visited, a:hover, a:active {
     color: black;
     font-weight: bold;
     font-style: italic;
+}
+
+#calendarHolder {
+    overflow: hidden;
+}
+
+.calendar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.month {
+    border: 1px solid black;
+    margin: 5px;
+    float: left;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font: 14px Arial;
+    padding: 8px 0;
+}
+
+.dateContainer {
+    margin: 0 10px 5px 10px;
+    float:left;
+}
+
+.date {
+    width: 20px;
+    height: 17px;
+    float: left;
+    text-align: center;
+    font: 12px Arial;
+    padding-top: 3px;
+    color: #808080;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.active:hover {
+    color: red;
+}
+
+.active {
+    color: black;
+    cursor: pointer;
 }
