@@ -1,18 +1,13 @@
 # BIT-101 LAB
 [Check out the live site](https://bit101.github.io/lab/)
 
+## Support
+[BitCoin](https://www.coinbase.com/bit101)
+
 ## Source
 You are here.
 
 ## Libraries
-[bitlib](https://github.com/bit101/bitlib)
-[QuickSettings](https://github.com/bit101/quicksettings)
-
-## Support
-[BitCoin](https://www.coinbase.com/bit101)
-
-## Libraries
-
 [bitlib](https://github.com/bit101/bitlib)
 
 [QuickSettings](https://github.com/bit101/quicksettings)
