@@ -19,6 +19,19 @@ canvas {
     box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
 }
 
+.info {
+    position: absolute;
+    z-index: 1001;
+    background-color: black;
+    color: white;
+    font:  12px Arial;
+    border: 1px solid white;
+    width: 200px;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+}
+
 a:link {
     text-decoration: none;
 }
