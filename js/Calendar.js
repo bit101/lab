@@ -16,61 +16,40 @@
  */
 
 var Calendar = {
-    model: {},
 
-    months: ["January", "February", "March",
-        "April", "May", "June",
-        "July", "August", "September",
-        "October", "November", "December"],
+    months: ["January", "February", "March", "April", "May", "June",
+             "July", "August", "September", "October", "November", "December"],
 
     create: function(model, year, parent) {
         this.model = model;
-        var container = document.createElement("div");
-        container.className = "calendar";
-
-        var header = document.createElement("div");
-        header.className = "calendarHeader";
-        header.innerText = year;
-        container.appendChild(header);
+        this.container = this.createElement(parent, "div", "calendar");
+        this.createElement(this.container, "div", "calendarHeader", year);
 
         for(var i = 0; i < 12; i++) {
-            this.drawMonth(container, year, i);
+            this.addMonth(year, i);
         }
-        parent.appendChild(container);
     },
 
-    drawMonth: function(container, year, month) {
-        var monthString = this.months[month];
-        var div = document.createElement("div");
-        div.className = "month";
-
-        var title = document.createElement("div");
-        title.className = "title";
-        title.innerText = monthString;
-        div.appendChild(title);
-
-        var dateContainer = document.createElement("div");
-        dateContainer.className = "dateContainer";
-        div.appendChild(dateContainer);
-
-
-        container.appendChild(div);
+    addMonth: function(year, month) {
+        var monthDiv = this.createElement(this.container, "div", "month"),
+            title = this.createElement(monthDiv, "div", "title", this.months[month]),
+            dateContainer = this.createElement(monthDiv, "div", "dateContainer");
 
         for(var i = 0; i < 42; i++) {
-            this.drawDate(dateContainer, year, month, i);
+            this.addDate(dateContainer, year, month, i);
         }
     },
 
-    drawDate: function(div, year, month, index) {
-        var first = new Date(year, month, 1).getDay();
-        var maxDate = this.getMaxDate(month, year);
-        var date = index - first + 1;
-        var dateDiv = document.createElement("div");
-        dateDiv.className = "date";
+    addDate: function(parent, year, month, index) {
+        var first = new Date(year, month, 1).getDay(),
+            maxDate = this.getMaxDate(month, year),
+            date = index - first + 1,
+            dateDiv = this.createElement(parent, "div", "date"),
+            title = this.formatDate(year, month, date);
+
         if(index > 0 && !(index % 7)) {
             dateDiv.style.clear = "both";
         }
-        var title = this.formatDate(year, month, date);
         if(date >= 1 && date <= maxDate) {
             dateDiv.innerText = date;
             if(this.model[title]) {
@@ -82,7 +61,6 @@ var Calendar = {
             }
         }
 
-        div.appendChild(dateDiv);
     },
 
     formatDate: function(year, month, date) {
@@ -110,5 +88,19 @@ var Calendar = {
                 return 29;
         }
         return 30
+    },
+
+    createElement: function(parent, type, className, innerText) {
+        var element = document.createElement(type);
+        if(className) {
+            element.className = className;
+        }
+        if(innerText) {
+            element.innerText = innerText;
+        }
+        if(parent) {
+            parent.appendChild(element);
+        }
+        return element;
     }
 };
