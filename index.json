@@ -1,12 +1,11 @@
 {
   "170101": {
-    "categories": [
-      "test"
-    ]
+    "tags": "test"
   },
   "170102": {
-    "categories": [
-      "test"
-    ]
+    "tags": "circles,test"
+  },
+  "170108": {
+    "tags": "circles,test"
   }
 }

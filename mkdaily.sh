@@ -2,5 +2,5 @@
 
 YYMMDD=$1
 
-sed "s/YYMMDD/$YYMMDD/" template.html > dev/$YYMMDD.html
-cp template.js dev/$YYMMDD.js
+sed "s/YYMMDD/$YYMMDD/" templates/template.html > dev/$YYMMDD.html
+cp templates/template.js dev/$YYMMDD.js

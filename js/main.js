@@ -15,13 +15,64 @@
  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-var model = {};
 
 (function() {
 
     $.getJSON("index.json", function(data) {
-        model = data;
-        Calendar.create(model, 2017, document.getElementById("calendarHolder"));
+        Calendar.create(data, 2017, document.getElementById("calendarHolder"));
+        parseTags(data);
         document.getElementsByClassName("content")[0].style.display = "block";
     });
+
+
+    function parseTags(model) {
+        var tags = [];
+        for(var item in model) {
+            var itemTags = model[item].tags.split(",");
+            for(var j = 0; j < itemTags.length; j++) {
+                var tag = itemTags[j];
+
+                if(tags.indexOf(tag) === -1) {
+                    tags.push(tag);
+                }
+            }
+        }
+        var tagDiv = document.getElementById("tags");
+        for(var i = 0; i < tags.length; i++) {
+            var a = document.createElement("a");
+            a.innerText = tags[i];
+            a.href = "#";
+            a.addEventListener("click", function(event) {
+                var tag = event.target.innerText;
+                var resultsDiv = document.getElementById("results");
+                resultsDiv.innerText = tag + ": ";
+                var results = getResults(tag, model);
+                for(var j = 0; j < results.length; j++) {
+                    var result = document.createElement("a");
+                    result.href = "dailies/" + results[j] + ".html";
+                    result.setAttribute("target", "_blank");
+                    result.innerText = results[j];
+                    resultsDiv.appendChild(result);
+                    if(j < results.length - 1) {
+                        resultsDiv.append(", ");
+                    }
+                }
+                event.preventDefault();
+            });
+            tagDiv.appendChild(a)
+            if(i < tags.length - 1) {
+                tagDiv.append(", ");
+            }
+        }
+    }
+
+    function getResults(tag, model) {
+        var results = [];
+        for(var item in model) {
+            if(model[item].tags.indexOf(tag) > -1) {
+                results.push(item);
+            }
+        }
+        return results;
+    }
 })();
