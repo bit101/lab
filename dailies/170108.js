@@ -19,8 +19,7 @@ var context = bitlib.context(0, 0),
     width = context.width,
     height = context.height;
 
-context.fillStyle = bitlib.color.randomRGB();
-context.fillRect(0, 0, width, height);
+context.clear(bitlib.color.randomRGB());
 context.setShadow(bitlib.color.rgba(0, 0, 0, 0.4), 10, 10, 20);
 
 for(var i  = 0; i < 1000; i++) {
