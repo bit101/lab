@@ -5,7 +5,7 @@
 [BitCoin](https://www.coinbase.com/bit101)
 
 ## Source
-You are here.
+You are here. Check the "dailies" folder.
 
 ## Libraries
 [bitlib](https://github.com/bit101/bitlib)
