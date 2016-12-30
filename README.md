@@ -3,6 +3,7 @@
 
 ## Support
 [BitCoin](https://www.coinbase.com/bit101)
+
 [PayPal](https://www.paypal.me/bit101)
 
 ## Source
