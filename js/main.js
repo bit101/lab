@@ -15,5 +15,6 @@ var model = {};
     $.getJSON("index.json", function(data) {
         model = data;
         Calendar.create(model, 2017, document.getElementById("calendarHolder"));
+        document.getElementsByClassName("content")[0].style.display = "block";
     });
 })();

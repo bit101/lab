@@ -49,6 +49,7 @@ ul {
     }
 
     .content {
+        display: none;
         width: 50%;
         margin-left: 25%;
         margin-right: 25%;
