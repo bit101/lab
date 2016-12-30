@@ -12,9 +12,9 @@ canvas {
     top: 5px;
     left: 5px;
     z-index: 1000;
-    background-color: black;
-    border: 1px solid white;
-    color: white;
+    background-color: #666666;
+    border: 1px solid black;
+    color: black;
     padding: 3px 5px;
     font: 12px Arial;
     -webkit-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
@@ -25,10 +25,10 @@ canvas {
 .info {
     position: absolute;
     z-index: 1001;
-    background-color: black;
-    color: white;
     font:  12px Arial;
-    border: 1px solid white;
+    background-color: #666666;
+    border: 1px solid black;
+    color: black;
     width: 200px;
     top: 5px;
     right: 5px;
