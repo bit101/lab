@@ -86,6 +86,14 @@ a:link, a:visited, a:hover, a:active {
     border: 1px solid black;
     margin: 5px;
     float: left;
+    background-color: #b0b0b0;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+}
+
+.month:hover {
+    background-color: #cccccc;
 }
 
 .title {
@@ -109,6 +117,7 @@ a:link, a:visited, a:hover, a:active {
     font: 12px Arial;
     padding-top: 3px;
     color: #808080;
+    cursor: default;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Chrome/Safari/Opera */
     -khtml-user-select: none; /* Konqueror */
@@ -118,11 +127,17 @@ a:link, a:visited, a:hover, a:active {
                                   not supported by any browser */
 }
 
+.date:hover {
+    background-color: #aaaaaa;
+}
+
 .active:hover {
-    color: red;
+    border: 1px solid red;
+    width: 18px;
+    height: 15px;
 }
 
 .active {
     color: black;
-    cursor: pointer;
+    font-weight: bold;
 }
