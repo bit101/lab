@@ -37,6 +37,7 @@
                 }
             }
         }
+        tags.sort();
         var tagDiv = document.getElementById("tags");
         for(var i = 0; i < tags.length; i++) {
             var a = document.createElement("a");
@@ -50,7 +51,6 @@
                 for(var j = 0; j < results.length; j++) {
                     var result = document.createElement("a");
                     result.href = "dailies/" + results[j] + ".html";
-                    // result.setAttribute("target", "_blank");
                     result.innerText = results[j];
                     resultsDiv.appendChild(result);
                     if(j < results.length - 1) {

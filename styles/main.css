@@ -133,11 +133,11 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .date:hover {
-    background-color: #aaaaaa;
+    background-color: #bbbbbb;
 }
 
 .active:hover {
-    border: 1px solid red;
+    border: 1px solid #333333;
     width: 18px;
     height: 15px;
 }
