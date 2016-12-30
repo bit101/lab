@@ -7,35 +7,30 @@ canvas {
     display: block;
 }
 
-.home_button {
+.home_button, .info {
     position: absolute;
     top: 5px;
-    left: 5px;
-    z-index: 1000;
+    padding: 5px;
     background-color: #666666;
-    border: 1px solid black;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
     color: black;
-    padding: 3px 5px;
     font: 12px Arial;
     -webkit-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
     box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
 }
 
+.home_button {
+    left: 5px;
+    z-index: 1000;
+}
+
 .info {
-    position: absolute;
     z-index: 1001;
-    font:  12px Arial;
-    background-color: #666666;
-    border: 1px solid black;
-    color: black;
     width: 200px;
-    top: 5px;
     right: 5px;
-    padding: 5px;
-    -webkit-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
 }
 
 a:link {
