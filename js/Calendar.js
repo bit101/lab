@@ -28,6 +28,11 @@ var Calendar = {
         var container = document.createElement("div");
         container.className = "calendar";
 
+        var header = document.createElement("div");
+        header.className = "calendarHeader";
+        header.innerText = year;
+        container.appendChild(header);
+
         for(var i = 0; i < 12; i++) {
             this.drawMonth(container, year, i);
         }
@@ -41,7 +46,7 @@ var Calendar = {
 
         var title = document.createElement("div");
         title.className = "title";
-        title.innerText = monthString + " " + year;
+        title.innerText = monthString;
         div.appendChild(title);
 
         var dateContainer = document.createElement("div");

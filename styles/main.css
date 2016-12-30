@@ -82,6 +82,11 @@ a:link, a:visited, a:hover, a:active {
     margin-right: auto;
 }
 
+.calendarHeader {
+    text-align: center;
+    font: 20px Arial;
+}
+
 .month {
     border: 1px solid black;
     margin: 5px;
