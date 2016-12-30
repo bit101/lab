@@ -7,7 +7,7 @@
 [PayPal](https://www.paypal.me/bit101)
 
 ## Source
-You are here. Check the "dailies" folder.
+You are here. Check the [dailies](https://github.com/bit101/lab/tree/master/dailies) folder.
 
 ## Libraries
 [bitlib](https://github.com/bit101/bitlib)
