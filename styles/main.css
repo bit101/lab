@@ -58,6 +58,7 @@ ul {
 
 
 .content {
+    display: none;
     overflow: hidden;
     background-color: #999999;
     padding: 20px;

@@ -22,8 +22,8 @@ var Calendar = {
 
     create: function(model, year, parent) {
         this.model = model;
-        this.container = this.createElement(parent, "div", "calendar");
-        this.createElement(this.container, "div", "calendarHeader", year);
+        this.container = ElementBuilder.createElement(parent, "div", "calendar");
+        ElementBuilder.createElement(this.container, "div", "calendarHeader", year);
 
         for(var i = 0; i < 12; i++) {
             this.addMonth(year, i);
@@ -31,9 +31,9 @@ var Calendar = {
     },
 
     addMonth: function(year, month) {
-        var monthDiv = this.createElement(this.container, "div", "month"),
-            title = this.createElement(monthDiv, "div", "title", this.months[month]),
-            dateContainer = this.createElement(monthDiv, "div", "dateContainer");
+        var monthDiv = ElementBuilder.createElement(this.container, "div", "month"),
+            title = ElementBuilder.createElement(monthDiv, "div", "title", this.months[month]),
+            dateContainer = ElementBuilder.createElement(monthDiv, "div", "dateContainer");
 
         for(var i = 0; i < 42; i++) {
             this.addDate(dateContainer, year, month, i);
@@ -44,7 +44,7 @@ var Calendar = {
         var first = new Date(year, month, 1).getDay(),
             maxDate = this.getMaxDate(month, year),
             date = index - first + 1,
-            dateDiv = this.createElement(parent, "div", "date"),
+            dateDiv = ElementBuilder.createElement(parent, "div", "date"),
             title = this.formatDate(year, month, date);
 
         if(index > 0 && !(index % 7)) {
@@ -88,19 +88,5 @@ var Calendar = {
                 return 29;
         }
         return 30
-    },
-
-    createElement: function(parent, type, className, innerText) {
-        var element = document.createElement(type);
-        if(className) {
-            element.className = className;
-        }
-        if(innerText) {
-            element.innerText = innerText;
-        }
-        if(parent) {
-            parent.appendChild(element);
-        }
-        return element;
     }
 };

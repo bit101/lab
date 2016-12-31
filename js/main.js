@@ -19,17 +19,12 @@
 (function() {
 
 
-    $.getJSON("index.json", handleData);
-
-    function handleData(data) {
+    $.getJSON("index.json", function(data) {
+        // eventually I'll need to figure out how best to display multiple years.
         Calendar.create(data, 2017, document.getElementById("calendarHolder"));
         TagManager.addTags(data);
-        showApp();
-    }
-
-    function showApp() {
-        document.getElementsByClassName("content")[0].style.display = "block";
-    }
+        $(".content").fadeIn(500);
+    });
 
 
 })();
