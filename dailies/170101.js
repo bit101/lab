@@ -15,11 +15,48 @@
  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
-
+// tags: "circles,3d,animation"
 
 var context = bitlib.context(0, 0),
-    width = context.width,
-    height = context.height;
+    w = context.width,
+    h = context.height;
 
-context.clear(bitlib.color.randomRGB());
+var points = [],
+    numPoints = 100,
+    a = 0,
+    s = 0.03;
+
+for(var i = 0; i < numPoints; i++) {
+    var offset = bitlib.random.float(Math.PI * 2),
+        slices = 8,
+        slice = Math.PI * 2 / slices;
+    points.push({
+        x: bitlib.random.float(w / 4),
+        y: bitlib.random.float(-h / 2, h / 2),
+        r: bitlib.random.float(2, 20),
+        offset: Math.round(offset / slice) * slice
+    });
+}
+
+context.lineWidth = 10;
+context.strokeStyle = "white";
+
+var anim = bitlib.anim(60, render);
+anim.start();
+
+function render() {
+    context.clear("black");
+    context.save();
+    context.translate(w / 2, h / 2);
+
+    for(var i = 0; i < numPoints; i++) {
+        var p = points[i];
+        context.save();
+        context.scale(Math.sin(a + p.offset), 1);
+        context.strokeCircle(p.x, p.y, p.r);
+        context.restore();
+    }
+    a += s;
+
+    context.restore();
+}
