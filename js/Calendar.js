@@ -38,6 +38,10 @@ var Calendar = {
         for(var i = 0; i < 42; i++) {
             this.addDate(dateContainer, year, month, i);
         }
+        // $(monthDiv).css("opacity", 0);
+        // $(monthDiv).delay(month * 100).animate({
+        //     "opacity": 1
+        // }, 500);
     },
 
     addDate: function(parent, year, month, index) {

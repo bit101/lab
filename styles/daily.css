@@ -7,7 +7,26 @@ canvas {
     display: block;
 }
 
+@keyframes slideFromRight {
+    from {
+        right: -200px
+    }
+    to {
+        right: 5px;
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        left: -50px
+    }
+    to {
+        left: 5px;
+    }
+}
+
 .home_button, .info {
+    animation-duration: 0.5s;
     position: absolute;
     top: 5px;
     padding: 5px;
@@ -25,12 +44,15 @@ canvas {
 .home_button {
     left: 5px;
     z-index: 1000;
+    animation-name: slideFromLeft;
 }
 
 .info {
     z-index: 1001;
     width: 200px;
     right: 5px;
+
+    animation-name: slideFromRight;
 }
 
 a:link {
