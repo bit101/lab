@@ -17,6 +17,13 @@
 
 // tags: "circles,3d,animation"
 
+/*
+    This comes from an old Flash technique that I originally saw Jared Tarbell do (http://levitated.net/daily/levGrowthID.html)
+    You would put a movie clip on the stage and draw something to the right of the registration point.
+    Then if you scale that movie clip on the x axis, it seems to be rotating.
+    Here, I'm just using canvas transforms and dynamic drawing, but same idea.
+ */
+
 var context = bitlib.context(0, 0),
     w = context.width,
     h = context.height;
