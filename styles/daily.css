@@ -33,15 +33,13 @@ canvas {
     right: 5px;
 }
 
-a:link {
-    text-decoration: none;
+.info a:link {
+    text-decoration: underline;
+    font-style: italic;
 }
-a:visited {
+
+a:link, a:visited, a:hover, a:active {
     text-decoration: none;
+    color: black;
 }
-a:hover {
-    text-decoration: none;
-}
-a:active {
-    text-decoration: none;
-}
+
