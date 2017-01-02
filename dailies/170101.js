@@ -22,6 +22,7 @@
     You would put a movie clip on the stage and draw something to the right of the registration point.
     Then if you scale that movie clip on the x axis, it seems to be rotating.
     Here, I'm just using canvas transforms and dynamic drawing, but same idea.
+    The effect is if you had a bunch of cards with drawings on each one, all joined on one edge, like the spokes of a wheel.
  */
 
 var context = bitlib.context(0, 0),
