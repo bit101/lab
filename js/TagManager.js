@@ -19,7 +19,7 @@ var TagManager = {
         for (var i = 0; i < this.tags.length; i++) {
             this.addTag(this.tags[i]);
             if (i < this.tags.length - 1) {
-                this.tagDiv.append(", ");
+                this.tagDiv.appendChild(document.createTextNode(", "));
             }
         }
     },
@@ -57,7 +57,7 @@ var TagManager = {
         for(var i = 0; i < items.length; i++) {
             this.addItem(items[i]);
             if (i < items.length - 1) {
-                this.resultsDiv.append(", ");
+                this.resultsDiv.appendChild(document.createTextNode(", "));
             }
         }
     },
