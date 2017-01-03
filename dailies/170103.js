@@ -38,7 +38,7 @@ for(var i = 0; i < numPoints; i++) {
         y: -h / 2 + h / 2 / numPoints * i * 2,
         r: 20,
         offset: i * 2,
-        color: bitlib.color.hsv(i / numPoints * 360, 1, 1)
+        color: bitlib.color.hsv(i / numPoints * 360, 1, 1).toString()
     });
 }
 
@@ -46,7 +46,7 @@ var anim = bitlib.anim(60, render);
 anim.start();
 
 function render() {
-    context.clear("black");
+   context.clear("black");
     context.save();
     context.translate(w / 2, h / 2);
 
@@ -55,7 +55,8 @@ function render() {
         context.save();
         context.translate(Math.sin(a + p.offset) * p.x, p.y)
         context.scale(Math.cos(a + p.offset), 1);
-        context.fillStyle = p.color;
+        context.fillStyle = p.color.toString();
+        console.log(p.color);
         context.fillCircle(0, 0, 20);
         context.restore();
     }
