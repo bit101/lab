@@ -46,7 +46,7 @@ var anim = bitlib.anim(60, render);
 anim.start();
 
 function render() {
-   context.clear("black");
+    context.clear("black");
     context.save();
     context.translate(w / 2, h / 2);
 
@@ -56,7 +56,6 @@ function render() {
         context.translate(Math.sin(a + p.offset) * p.x, p.y)
         context.scale(Math.cos(a + p.offset), 1);
         context.fillStyle = p.color.toString();
-        console.log(p.color);
         context.fillCircle(0, 0, 20);
         context.restore();
     }
