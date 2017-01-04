@@ -21,19 +21,52 @@
 
     var thumbHolder = document.getElementById("thumbHolder");
     thumbHolder.style.textAlign = "center";
+    var ascending = true;
 
     $.getJSON("index.json", function(data) {
+        var list = [];
         for(var item in data) {
-            var a = document.createElement("a");
-            a.href = "dailies/" + item + ".html";
-
-            var img = document.createElement("img");
-            img.src = "thumbs/" + item + ".png";
-
-            a.appendChild(img);
-            thumbHolder.appendChild(a);
+            list.push(item);
         }
+
+        list.sort();
+        display();
+
         TagManager.addTags(data);
+
+        var sortLink = document.getElementById("sortLink");
+        sortLink.addEventListener("click", function(event) {
+            list.sort();
+            ascending = !ascending;
+            if(!ascending) {
+                list.reverse();
+                sortLink.innerText = "New to Old";
+            }
+            else {
+                sortLink.innerText = "Old to New";
+            }
+            display();
+            event.preventDefault();
+        });
+
+        function display() {
+            console.log("display")
+            while(thumbHolder.firstChild) {
+                thumbHolder.removeChild(thumbHolder.firstChild);
+            }
+            for (var i = 0; i < list.length; i++) {
+                var item = list[i];
+                var a = document.createElement("a");
+                a.href = "dailies/" + item + ".html";
+
+                var img = document.createElement("img");
+                img.src = "thumbs/" + item + ".png";
+
+                a.appendChild(img);
+                thumbHolder.appendChild(a);
+            }
+        }
+
     });
 
 
