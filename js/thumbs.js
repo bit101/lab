@@ -33,6 +33,7 @@
             a.appendChild(img);
             thumbHolder.appendChild(a);
         }
+        TagManager.addTags(data);
     });
 
 
