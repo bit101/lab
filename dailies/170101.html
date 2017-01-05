@@ -9,10 +9,45 @@
 <body>
 <a class="home_button" href="https://bit101.github.io/lab/">HOME</a>
 <div class="info">
-    <strong>170101</strong> - <a href="https://github.com/bit101/lab/blob/master/dailies/170101.js">Source</a><br/>
-    This is not 3D.
+    <strong>170101</strong> - <a href="https://github.com/bit101/lab/blob/master/dailies/170101.js">Source</a>
+    <p>This is not 3D.</p>
+    <a href="#" id="commentLink">Toggle Comments</a>
 </div>
+
 <script src="../libs/bitlib_1_0_1.min.js"></script>
 <script src="170101.js"></script>
+
+
+<!-- comments -->
+<div id="disqus_thread"></div>
+<script>
+    var commentsShown = false,
+        commentDiv = document.getElementById("disqus_thread"),
+        commentLink = document.getElementById("commentLink");
+
+    commentLink.addEventListener("click", function(event) {
+        commentsShown = !commentsShown;
+        if(commentsShown) {
+            commentDiv.style.display = "block";
+        }
+        else {
+            commentDiv.style.display = "none";
+        }
+        event.preventDefault();
+    });
+
+    var disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = "170101";
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//bit101lab.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
 </body>
 </html>

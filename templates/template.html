@@ -10,10 +10,43 @@
 <a class="home_button" href="https://bit101.github.io/lab/">HOME</a>
 <div class="info">
     <strong>YYMMDD</strong> - <a href="https://github.com/bit101/lab/blob/master/dailies/YYMMDD.js">Source</a><br/>
-    OOPS
+    <p>OOPS</p>
+    <a href="#" id="commentLink">Toggle Comments</a>
 </div>
 <script src="../libs/bitlib_1_0_2.min.js"></script>
 <script src="../libs/quicksettings_3_0.min.js"></script>
 <script src="YYMMDD.js"></script>
+
+<!-- comments -->
+<div id="disqus_thread"></div>
+<script>
+    var commentsShown = false,
+        commentDiv = document.getElementById("disqus_thread"),
+        commentLink = document.getElementById("commentLink");
+
+    commentLink.addEventListener("click", function(event) {
+        commentsShown = !commentsShown;
+        if(commentsShown) {
+            commentDiv.style.display = "block";
+        }
+        else {
+            commentDiv.style.display = "none";
+        }
+        event.preventDefault();
+    });
+
+    var disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = "YYMMDD";
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//bit101lab.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
 </body>
 </html>
