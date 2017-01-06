@@ -43,15 +43,3 @@ a:link, a:visited, a:hover, a:active {
     color: black;
 }
 
-#disqus_thread {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    padding: 20px;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    height: 50%;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-}
