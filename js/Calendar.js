@@ -48,7 +48,7 @@ var Calendar = {
         var first = new Date(year, month, 1).getDay(),
             maxDate = this.getMaxDate(month, year),
             date = index - first + 1,
-            dateDiv = ElementBuilder.createElement(parent, "div", "date"),
+            dateDiv = ElementBuilder.createElement(parent, "a", "date"),
             title = this.formatDate(year, month, date);
 
         if(index > 0 && !(index % 7)) {
@@ -57,11 +57,12 @@ var Calendar = {
         if(date >= 1 && date <= maxDate) {
             dateDiv.innerText = date;
             if(this.model[title]) {
-                dateDiv.dataset.date = title;
+                // dateDiv.dataset.date = title;
                 dateDiv.className += " active";
-                dateDiv.addEventListener("click", function(event) {
-                    window.location.href = "dailies/" + event.target.dataset.date + ".html";
-                });
+                dateDiv.href = "dailies/" + title + ".html";
+                // dateDiv.addEventListener("click", function(event) {
+                //     window.location.href = "dailies/" + event.target.dataset.date + ".html";
+                // });
             }
         }
 
