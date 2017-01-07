@@ -7,16 +7,19 @@
     <link rel="stylesheet" type="text/css" href="../styles/daily.css">
 </head>
 <body>
-<div class="home_button">
-    <a href="https://bit101.github.io/lab/">CALENDAR</a> - <a href="https://bit101.github.io/lab/thumbs.html">THUMBS</a>
-</div>
-<div class="info">
-    <strong>170102</strong>
-    <p>Also not 3D.</p>
-    <a href="https://github.com/bit101/lab/blob/master/dailies/170102.js">Source</a> - <a href="https://github.com/bit101/lab/issues/2">Comments</a>
-</div>
 
+<script src="../libs/quicksettings_3_0.min.js"></script>
 <script src="../libs/bitlib_1_0_1.min.js"></script>
+<script>
+    var panel = QuickSettings.create(10, 10, "170102")
+        .addHTML("home", '<a href="https://bit101.github.io/lab/">CALENDAR</a> - <a href="https://bit101.github.io/lab/thumbs.html">THUMBS</a>')
+        .addHTML("Description", "Also not 3D")
+        .addHTML("source_comments", '<a href="https://github.com/bit101/lab/blob/master/dailies/170102.js">SOURCE</a> - <a href="https://github.com/bit101/lab/issues/2">COMMENTS</a>')
+        .addHTML("prev_next", '<a href="170101.html">PREV</a> - <a href="170103.html">NEXT</a>')
+        .hideAllTitles()
+        .showTitle("Description");
+</script>
+
 <script src="170102.js"></script>
 
 

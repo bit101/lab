@@ -7,18 +7,20 @@
     <link rel="stylesheet" type="text/css" href="../styles/daily.css">
 </head>
 <body>
-<div class="home_button">
-    <a href="https://bit101.github.io/lab/">CALENDAR</a> - <a href="https://bit101.github.io/lab/thumbs.html">THUMBS</a>
-</div>
-<div class="info">
-    <strong>170103</strong>
-    <p>The lack of proper z-sorting causes all kinds of visual confusion here. Sometimes it seems to be rotating in both directions at the same time.</p>
-    <a href="https://github.com/bit101/lab/blob/master/dailies/170103.js">Source</a> - <a href="https://github.com/bit101/lab/issues/3">Comments</a>
-</div>
+
+<script src="../libs/quicksettings_3_0.min.js"></script>
 <script src="../libs/bitlib_1_0_1.min.js"></script>
+<script>
+    var panel = QuickSettings.create(10, 10, "170103")
+        .addHTML("home", '<a href="https://bit101.github.io/lab/">CALENDAR</a> - <a href="https://bit101.github.io/lab/thumbs.html">THUMBS</a>')
+        .addHTML("Description", "The lack of proper z-sorting causes all kinds of visual confusion here. Sometimes it seems to be rotating in both directions at the same time.")
+        .addHTML("source_comments", '<a href="https://github.com/bit101/lab/blob/master/dailies/170103.js">SOURCE</a> - <a href="https://github.com/bit101/lab/issues/3">COMMENTS</a>')
+        .addHTML("prev_next", '<a href="170102.html">PREV</a> - <a href="170104.html">NEXT</a>')
+        .hideAllTitles()
+        .showTitle("Description");
+</script>
+
 <script src="170103.js"></script>
-
-
 
 </body>
 </html>

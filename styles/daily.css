@@ -7,39 +7,3 @@ canvas {
     display: block;
 }
 
-.home_button, .info {
-    position: absolute;
-    top: 5px;
-    padding: 5px;
-    background-color: #999999;
-    border-radius: 4px 4px 4px 4px;
-    -moz-border-radius: 4px 4px 4px 4px;
-    -webkit-border-radius: 4px 4px 4px 4px;
-    color: black;
-    font: 12px Arial;
-    -webkit-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
-}
-
-.home_button {
-    left: 5px;
-    z-index: 1000;
-}
-
-.info {
-    z-index: 1001;
-    width: 200px;
-    right: 5px;
-}
-
-.info a:link {
-    text-decoration: underline;
-    font-style: italic;
-}
-
-a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-    color: black;
-}
-

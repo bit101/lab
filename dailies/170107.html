@@ -7,15 +7,19 @@
     <link rel="stylesheet" type="text/css" href="../styles/daily.css">
 </head>
 <body>
-<div class="home_button">
-    <a href="https://bit101.github.io/lab/">CALENDAR</a> - <a href="https://bit101.github.io/lab/thumbs.html">THUMBS</a>
-</div>
-<div class="info">
-    <strong>170107</strong>
-    <p>Click. Really fun on a touch screen.</p>
-    <a href="https://github.com/bit101/lab/blob/master/dailies/170107.js">Source</a> - <a href="https://github.com/bit101/lab/issues/7">Comments</a>
-</div>
+
+<script src="../libs/quicksettings_3_0.min.js"></script>
 <script src="../libs/bitlib_1_0_1.min.js"></script>
+<script>
+    var panel = QuickSettings.create(10, 10, "170107")
+        .addHTML("home", '<a href="https://bit101.github.io/lab/">CALENDAR</a> - <a href="https://bit101.github.io/lab/thumbs.html">THUMBS</a>')
+        .addHTML("Description", "Click. Really fun on a touch screen.")
+        .addHTML("source_comments", '<a href="https://github.com/bit101/lab/blob/master/dailies/170107.js">SOURCE</a> - <a href="https://github.com/bit101/lab/issues/7">COMMENTS</a>')
+        .addHTML("prev_next", '<a href="170106.html">PREV</a><!-- - <a href="170108.html">NEXT</a>-->')
+        .hideAllTitles()
+        .showTitle("Description");
+</script>
+
 <script src="170107.js"></script>
 
 
