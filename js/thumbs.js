@@ -22,6 +22,7 @@
     var thumbHolder = document.getElementById("thumbHolder");
     thumbHolder.style.textAlign = "center";
     var ascending = true;
+    var smallThumbs = false;
 
     $.getJSON("index.json", function(data) {
         var list = [];
@@ -49,7 +50,6 @@
             event.preventDefault();
         });
 
-        var smallThumbs = false;
         var thumbSizeLink = document.getElementById("thumbSizeLink");
         thumbSizeLink.addEventListener("click", function(event) {
             smallThumbs = !smallThumbs;
@@ -90,6 +90,10 @@
 
                 var img = document.createElement("img");
                 img.src = "thumbs/" + item + ".png";
+                if(smallThumbs) {
+                    img.style.width = "100px";
+                    img.style.height = "100px";
+                }
 
                 a.appendChild(img);
                 thumbHolder.appendChild(a);
