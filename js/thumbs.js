@@ -62,7 +62,7 @@
                             .fadeIn(500);
 
                     });
-                thumbSizeLink.innerText = "Large Thumbs";
+                thumbSizeLink.innerText = "Small";
             }
             else {
                 $("img")
@@ -73,7 +73,7 @@
                             .fadeIn(500);
 
                     });
-                thumbSizeLink.innerText = "Small Thumbs";
+                thumbSizeLink.innerText = "Large";
             }
             event.preventDefault();
         });
