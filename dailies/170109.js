@@ -60,7 +60,7 @@ function update() {
         var s = bitlib.math.map(w, -1, 1, sizeMin, sizeMax);
         context.save();
         context.fillStyle = bitlib.color.hsv(bitlib.math.lerp(h0, h1, i / height), 1, 1);
-        context.translate(0, height - i * 2);
+        context.translate(0, height - i);
         context.scale(1, angle);
         context.rotate(i * twist * Math.sin(a) * 1);
         context.fillRect(-s / 2, -s / 2, s, s);
