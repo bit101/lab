@@ -49,6 +49,35 @@
             event.preventDefault();
         });
 
+        var smallThumbs = false;
+        var thumbSizeLink = document.getElementById("thumbSizeLink");
+        thumbSizeLink.addEventListener("click", function(event) {
+            smallThumbs = !smallThumbs;
+            if(smallThumbs) {
+                $("img")
+                    .fadeOut(500, function() {
+                        $("img")
+                            .css("width", "100px")
+                            .css("height", "100px")
+                            .fadeIn(500);
+
+                    });
+                thumbSizeLink.innerText = "Large Thumbs";
+            }
+            else {
+                $("img")
+                    .fadeOut(500, function() {
+                        $("img")
+                            .css("width", "200px")
+                            .css("height", "200px")
+                            .fadeIn(500);
+
+                    });
+                thumbSizeLink.innerText = "Small Thumbs";
+            }
+            event.preventDefault();
+        });
+
         function display() {
             console.log("display")
             while(thumbHolder.firstChild) {
