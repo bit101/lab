@@ -30,11 +30,9 @@ p {
     margin-left: 10px;
 }
 
-.mainLink {
-    margin-right: 20px;
-    text-align: right;
+#sortDir {
+    text-align: center;
 }
-
 
 .content {
     margin-left: auto;

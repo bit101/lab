@@ -41,12 +41,10 @@
             ascending = !ascending;
             if(!ascending) {
                 list.reverse();
-                sortLink.innerText = "New to Old";
             }
-            else {
-                sortLink.innerText = "Old to New";
-            }
-            display();
+            $(thumbHolder).fadeOut(500, function() {
+                display();
+            });
             event.preventDefault();
         });
 
@@ -62,7 +60,6 @@
                             .fadeIn(500);
 
                     });
-                thumbSizeLink.innerText = "Small";
             }
             else {
                 $("img")
@@ -73,13 +70,12 @@
                             .fadeIn(500);
 
                     });
-                thumbSizeLink.innerText = "Large";
             }
             event.preventDefault();
         });
 
         function display() {
-            console.log("display")
+            document.getElementById("sortDir").innerText = ascending ? "Old to New" : "New to Old";
             while(thumbHolder.firstChild) {
                 thumbHolder.removeChild(thumbHolder.firstChild);
             }
@@ -98,6 +94,7 @@
                 a.appendChild(img);
                 thumbHolder.appendChild(a);
             }
+            $(thumbHolder).fadeIn(500);
         }
 
     });
