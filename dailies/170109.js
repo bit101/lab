@@ -35,8 +35,7 @@ panel
     .addRange("twist", 0, 0.1, 0.02, 0.001)
     .addRange("wave", 0, 0.25, 0.02, 0.001)
     .addRange("hue top", 0, 360, 180, 1)
-    .addRange("hue bottom", 0, 360, 0, 1)
-    .saveInLocalStorage("170109");
+    .addRange("hue bottom", 0, 360, 0, 1);
 var a = 0,
     s = 0.1;
 context.lineWidth = 0.25;
