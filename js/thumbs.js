@@ -21,8 +21,12 @@
 
     var thumbHolder = document.getElementById("thumbHolder");
     thumbHolder.style.textAlign = "center";
-    var ascending = true;
-    var smallThumbs = false;
+
+    var thumbSort = localStorage.getItem("thumbsSort");
+    var ascending = (thumbSort == null || thumbSort === "ascending");
+
+    var thumbSize = localStorage.getItem("thumbSize");
+    var smallThumbs = (thumbSize == "small");
 
     $.getJSON("index.json", function(data) {
         var list = [];
@@ -31,6 +35,9 @@
         }
 
         list.sort();
+        if(!ascending) {
+            list.reverse();
+        }
         display();
 
         TagManager.addTags(data);
@@ -39,6 +46,7 @@
         sortLink.addEventListener("click", function(event) {
             list.sort();
             ascending = !ascending;
+            localStorage.setItem("thumbsSort", ascending ? "ascending" : "descending");
             if(!ascending) {
                 list.reverse();
             }
@@ -51,6 +59,7 @@
         var thumbSizeLink = document.getElementById("thumbSizeLink");
         thumbSizeLink.addEventListener("click", function(event) {
             smallThumbs = !smallThumbs;
+            localStorage.setItem("thumbSize", smallThumbs ? "small" : "large");
             if(smallThumbs) {
                 $("img")
                     .fadeOut(500, function() {
