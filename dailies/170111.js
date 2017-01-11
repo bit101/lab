@@ -121,19 +121,19 @@ function getActiveHandle(x, y) {
 function makeHandles() {
     return [
         {
-            x: bitlib.random.float(width),
+            x: bitlib.random.float(250, width),
             y: bitlib.random.float(height)
         },
         {
-            x: bitlib.random.float(width),
+            x: bitlib.random.float(250, width),
             y: bitlib.random.float(height)
         },
         {
-            x: bitlib.random.float(width),
+            x: bitlib.random.float(250, width),
             y: bitlib.random.float(height)
         },
         {
-            x: bitlib.random.float(width),
+            x: bitlib.random.float(250, width),
             y: bitlib.random.float(height)
         }
     ];
