@@ -39,12 +39,14 @@ var cx = width / 2,
     x2 = width,
     y2 = height / 2;
 
+var hue = bitlib.random.int(360);
+
 
 
 bitlib.anim(update).start();
 
 function update() {
-    context.clear();
+    context.clear(bitlib.color.hsv(hue, 0.1, 1));
     cx += vx;
     cy += vy;
     vy += gravity;
@@ -60,6 +62,8 @@ function update() {
 
     vx *= 0.999;
     vy *= 0.999;
+    context.fillStyle = bitlib.color.hsv(hue, 0.7, 1);
+    context.fillCircle(cx, cy, cr);
     context.strokeCircle(cx, cy, cr);
 
     if (cy + cr > y1) {
