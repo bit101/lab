@@ -147,11 +147,6 @@ a, a:link, a:visited, a:hover, a:active {
     height: 15px;
 }
 
-/*.active:visited {*/
-    /*font-size: 12px;*/
-    /*color: #555555;*/
-/*}*/
-
 .active:link {
     font-style: normal;
     font-size: 13px;

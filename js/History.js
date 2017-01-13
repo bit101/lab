@@ -12,7 +12,6 @@ var History = {
     clear: function() {
         for(var i = 0; i < this.dates.length; i++) {
             $("#" + this.dates[i]).css({
-                fontStyle: "normal",
                 color:  "#000000",
                 textDecoration: "none"
             });
@@ -39,7 +38,6 @@ var History = {
     apply: function() {
         for(var i = 0; i < this.dates.length; i++) {
             $("#" + this.dates[i]).css({
-                fontStyle: "italic",
                 color:  "#555555",
                 textDecoration: "line-through"
             });
