@@ -28,6 +28,11 @@ var Calendar = {
         for(var i = 0; i < 12; i++) {
             this.addMonth(year, i);
         }
+        $("#clearHistoryBtn").click(function(event) {
+            History.clear();
+            event.preventDefault();
+        });
+        History.load();
     },
 
     addMonth: function(year, month) {
@@ -59,10 +64,11 @@ var Calendar = {
             if(this.model[title]) {
                 // dateDiv.dataset.date = title;
                 dateDiv.className += " active";
+                dateDiv.id = title;
                 dateDiv.href = "dailies/" + title + ".html";
-                // dateDiv.addEventListener("click", function(event) {
-                //     window.location.href = "dailies/" + event.target.dataset.date + ".html";
-                // });
+                dateDiv.addEventListener("click", function(event) {
+                    History.add(event.target.id);
+                });
             }
         }
 
