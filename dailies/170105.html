@@ -3,25 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="BIT-101 Daily Open Source JavaScript and HTML Canvas Experiments">
-    <title>170105</title>
     <link rel="stylesheet" type="text/css" href="../styles/daily.css">
 </head>
 <body>
 
+<script src="../js/ui.js"></script>
 <script src="../libs/quicksettings_3_0.min.js"></script>
 <script src="../libs/bitlib_1_0_1.min.js"></script>
 <script>
-    var panel = QuickSettings.create(10, 10, "170105")
-        .addHTML("home", '<a href="https://bit101.github.io/lab/">CALENDAR</a> - <a href="https://bit101.github.io/lab/thumbs.html">THUMBS</a>')
-        .addHTML("Description", "Bounce.")
-        .addHTML("source_comments", '<a href="https://github.com/bit101/lab/blob/master/dailies/170105.js"><img src="../images/github.png"></a><a href="https://github.com/bit101/lab/issues/5"><img src="../images/comment.png"></a><a href="https://twitter.com/home?status=Check it: https://bit101.github.io/lab/dailies/170105.html"><img src="../images/twitter.png"></a><a href="https://www.facebook.com/sharer.php?u=https://bit101.github.io/lab/dailies/170105.html"><img src="../images/facebook.png"></a>')
-        .addHTML("prev_next", '<a href="170104.html">PREV</a> - <a href="170106.html">NEXT</a>')
-        .hideAllTitles()
-        .showTitle("Description");
+    var date = 170105;
+    var desc = "Bounce.";
+    var issueNumber = 5;
+    setup(date, date - 1, date + 1, desc, issueNumber);
 </script>
-
-<script src="170105.js"></script>
-
-
 </body>
 </html>

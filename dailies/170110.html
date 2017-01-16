@@ -3,29 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="BIT-101 Daily Open Source JavaScript and HTML Canvas Experiments">
-    <title>170110</title>
     <link rel="stylesheet" type="text/css" href="../styles/daily.css">
 </head>
 <body>
 
+<script src="../js/ui.js"></script>
 <script src="../libs/quicksettings_3_0.min.js"></script>
 <script src="../libs/bitlib_1_0_2.min.js"></script>
 <script>
-    var panel = QuickSettings.create(10, 10, "170110")
-        .addHTML("home", '<a href="https://bit101.github.io/lab/">CALENDAR</a> - <a href="https://bit101.github.io/lab/thumbs.html">THUMBS</a>')
-        .addHTML("Description", 'Thale\'s Theorem.')
-        .addHTML("Links", '<a href="https://en.wikipedia.org/wiki/Thales%27_theorem">Thale\'s Theorem</a>')
-        .addHTML("Link2", '<a href="https://www.amazon.com/Beautiful-Geometry-Eli-Maor/dp/0691150990/ref=as_li_ss_il?ie=UTF8&qid=1483362047&sr=8-1&keywords=beautiful+geometry&linkCode=li1&tag=bit10103-20&linkId=5ad49969c977bb2428645100dedcf12d" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0691150990&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=bit10103-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=bit10103-20&l=li1&o=1&a=0691150990" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />')
-        .addHTML("source_comments", '<a href="https://github.com/bit101/lab/blob/master/dailies/170110.js"><img src="../images/github.png"></a><a href="https://github.com/bit101/lab/issues/10"><img src="../images/comment.png"></a><a href="https://twitter.com/home?status=Check it: https://bit101.github.io/lab/dailies/170110.html"><img src="../images/twitter.png"></a><a href="https://www.facebook.com/sharer.php?u=https://bit101.github.io/lab/dailies/170110.html"><img src="../images/facebook.png"></a>')
-        .addHTML("prev_next", '<a href="170109.html">PREV</a> - <a href="170111.html">NEXT</a>')
-        .hideAllTitles()
-        .showTitle("Links")
-        .showTitle("Description");
+    var date = 170110;
+    var desc = "Thale\'s Theorem.";
+    var issueNumber = 10;
+    setup(date, date - 1, date + 1, desc, issueNumber,
+        [
+            '<a href="https://en.wikipedia.org/wiki/Thales%27_theorem">Thale\'s Theorem</a>',
+            '<a href="https://www.amazon.com/Beautiful-Geometry-Eli-Maor/dp/0691150990/ref=as_li_ss_il?ie=UTF8&qid=1483362047&sr=8-1&keywords=beautiful+geometry&linkCode=li1&tag=bit10103-20&linkId=5ad49969c977bb2428645100dedcf12d" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0691150990&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=bit10103-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=bit10103-20&l=li1&o=1&a=0691150990" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />'
+        ]);
 </script>
-
-
-<script src="170110.js"></script>
-
-
 </body>
 </html>
