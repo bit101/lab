@@ -49,5 +49,8 @@
   },
   "170117": {
     "tags": "lines,math,geometry,cycloid,trochoid,interactive"
+  },
+  "170118": {
+    "tags": "lines,math,geometry,epitrochoid,trochoid,interactive"
   }
 }
