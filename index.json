@@ -52,5 +52,8 @@
   },
   "170118": {
     "tags": "lines,math,geometry,epitrochoid,trochoid,interactive"
+  },
+  "170119": {
+    "tags": "lines,math,geometry,hypotrochoid,trochoid,interactive"
   }
 }
