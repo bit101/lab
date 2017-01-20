@@ -55,5 +55,8 @@
   },
   "170119": {
     "tags": "lines,math,geometry,hypotrochoid,trochoid,interactive"
+  },
+  "170120": {
+    "tags": "lines,math,geometry,guilloche,interactive"
   }
 }
