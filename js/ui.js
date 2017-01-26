@@ -25,7 +25,7 @@ function setup(yymmdd, prev, next, desc, issueNumber, links) {
     }
 
     panel
-        .addHTML("source_comments", '<a href="https://github.com/bit101/lab/blob/master/dailies/' + yymmdd + '.js"><img src="../images/github.png"></a><a href="https://github.com/bit101/lab/issues/' + issueNumber + '"><img src="../images/comment.png"></a><a href="https://twitter.com/home?status=Check it: https://bit101.github.io/lab/dailies/' + yymmdd + '.html"><img src="../images/twitter.png"></a><a href="https://www.facebook.com/sharer.php?u=https://bit101.github.io/lab/dailies/' + yymmdd + '.html"><img src="../images/facebook.png"></a>')
+        .addHTML("source_comments", '<a href="https://github.com/bit101/lab/blob/master/dailies/' + yymmdd + '.js"><img src="../images/github.png"></a><a href="https://github.com/bit101/lab/issues/' + issueNumber + '"><img src="../images/comment.png"></a><a href="https://twitter.com/home?status=Check it: https://bit101.github.io/lab/dailies/' + yymmdd + '.html"><img src="../images/twitter.png"></a><a href="https://www.facebook.com/sharer.php?u=https://bit101.github.io/lab/dailies/' + yymmdd + '.html&picture=https://bit101.github.io/lab/thumbs/' + yymmdd + '.png"><img src="../images/facebook.png"></a>')
         .addHTML("prev_next", prevNext)
         .hideAllTitles()
         .showTitle("Description");
