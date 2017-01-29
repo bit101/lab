@@ -18,7 +18,7 @@
     "tags": "lines,3d,animation,interactive,gravity,physics"
   },
   "170107": {
-    "tags": "lines,3d,animation,interactive"
+    "tags": "lines,3d,animation,interactive,simulation"
   },
   "170108": {
     "tags": "circles,3d,animation,interactive"
@@ -33,10 +33,10 @@
     "tags": "geometry,math,interactive"
   },
   "170112": {
-    "tags": "math,geometry,circles,lines,interactive"
+    "tags": "math,geometry,circles,lines,interactive,simulation"
   },
   "170113": {
-    "tags": "math,geometry,circles,lines,animation"
+    "tags": "math,geometry,circles,lines,animation,simulation,gravity"
   },
   "170114": {
     "tags": "explorer"
@@ -69,7 +69,7 @@
     "tags": "lines,math,geometry,rose,interactive"
   },
   "170124": {
-    "tags": "physics,gravity,animation,circles"
+    "tags": "physics,gravity,animation,circles,simulation"
   },
   "170125": {
     "tags": "math,fractals,sierpinski,interactive"
