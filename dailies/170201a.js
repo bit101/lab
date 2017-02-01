@@ -38,9 +38,9 @@ var canvas = document.createElement("canvas"),
     ctx = canvas.getContext("2d");
 
 function makeFrames() {
-    canvas.width = img.width + 46;
-    canvas.height = img.height + 50;
-    ctx.drawImage(img, 46, 50);
+    canvas.width = img.width;
+    canvas.height = img.height;
+    ctx.drawImage(img, 0, 0);
 }
 
 var a = 0,
@@ -52,7 +52,7 @@ function update() {
     context.save();
     context.translate(width / 2, height / 2);
     context.rotate(a += panel.getValue("speed"));
-    context.drawImage(canvas, -height / 2, -height / 2);
+    context.drawImage(canvas, -canvas.width / 2, -canvas.height / 2);
     context.restore();
     // context.beginPath();
     // context.moveTo(width / 2, 0);
