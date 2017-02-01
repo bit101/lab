@@ -28,7 +28,6 @@ img.addEventListener("load", function() {
 
 panel
     .addRange("speed", 0, 2, 0.0, 0.001)
-    .addRange("frames", 0, 60, 24, 1, makeFrames)
     .addRange("fps", 1, 60, 15, 1, function(value) {
         anim.fps = value;
     });
