@@ -36,7 +36,7 @@
     "tags": "math,geometry,circles,lines,interactive,simulation"
   },
   "170113": {
-    "tags": "math,geometry,circles,lines,animation,simulation,gravity"
+    "tags": "math,geometry,circles,lines,animation,simulation,gravity,physics"
   },
   "170114": {
     "tags": "explorer"
@@ -121,6 +121,9 @@
   },
   "170210": {
     "tags": "lines,interactive,generative,isometric"
+  },
+  "170211": {
+    "tags": "lines,interactive,generative,perlin"
   }
 
 }
