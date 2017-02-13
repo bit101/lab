@@ -4,27 +4,27 @@
     <meta charset="utf-8">
     <meta name="description" content="BIT-101 Daily Open Source JavaScript and HTML Canvas Experiments">
     <link rel="stylesheet" type="text/css" href="../styles/daily.css">
-
     <style>
-
         canvas {
             position: absolute;
-            left: 0;
             top: 0;
+            left: 0;
+        }
+        html, body {
+            overflow: hidden;
         }
     </style>
 </head>
 <body>
 
 <script src="../js/ui.js"></script>
-<script src="../libs/perlin.js"></script>
 <script src="../libs/quicksettings_3_0.min.js"></script>
 <script src="../libs/bitlib_1_0_2.min.js"></script>
 <script>
-    var date = 170212;
-    var desc = "Ball's velocity influenced by Perlin flow field. Sometimes attractor-like patterns emerge.";
-    var issueNumber = 43;
-    setup(date, date - 1, date + 1, desc, issueNumber);
+    var date = 170213;
+    var desc = "Moiré patterns. Fixed bottom grid + draggable grid on top. Top grid is identical to bottom grid, but scaled and rotated. Interesting how motion on one axis can manifest as apparent motion in a different direction or a different axis.";
+    var issueNumber = 44;
+    setup(date, date - 1, null, desc, issueNumber);
 </script>
 </body>
 </html>
