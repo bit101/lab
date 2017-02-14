@@ -72,10 +72,10 @@
     "tags": "physics,gravity,animation,circles,simulation"
   },
   "170125": {
-    "tags": "math,fractals,sierpinski,interactive"
+    "tags": "math,fractal,sierpinski,interactive"
   },
   "170126": {
-    "tags": "math,fractals,sierpinski,interactive"
+    "tags": "math,fractal,sierpinski,interactive"
   },
   "170127": {
     "tags": "math,3d,interactive,lines"
@@ -130,6 +130,9 @@
   },
   "170213": {
     "tags": "moiré,interactive,circles"
+  },
+  "170214": {
+    "tags": "animation,sierpinski,fractal,math"
   }
 
 }
