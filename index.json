@@ -51,22 +51,22 @@
     "tags": "lines,math,geometry,cycloid,trochoid,interactive"
   },
   "170118": {
-    "tags": "lines,math,geometry,epitrochoid,trochoid,interactive"
+    "tags": "lines,math,geometry,epitrochoid,trochoid,interactive,drawing machine"
   },
   "170119": {
-    "tags": "lines,math,geometry,hypotrochoid,trochoid,interactive"
+    "tags": "lines,math,geometry,hypotrochoid,trochoid,interactive,drawing machine"
   },
   "170120": {
-    "tags": "lines,math,geometry,guilloche,interactive"
+    "tags": "lines,math,geometry,guilloche,interactive,drawing machine"
   },
   "170121": {
-    "tags": "lines,math,geometry,guilloche,interactive"
+    "tags": "lines,math,geometry,guilloche,interactive,drawing machine"
   },
   "170122": {
-    "tags": "lines,math,geometry,guilloche,interactive"
+    "tags": "lines,math,geometry,guilloche,interactive,drawing machine"
   },
   "170123": {
-    "tags": "lines,math,geometry,rose,interactive"
+    "tags": "lines,math,geometry,rose,interactive,drawing machine"
   },
   "170124": {
     "tags": "physics,gravity,animation,circles,simulation"
@@ -126,7 +126,7 @@
     "tags": "lines,interactive,generative,perlin"
   },
   "170212": {
-    "tags": "lines,interactive,physics,perlin"
+    "tags": "lines,interactive,physics,perlin,drawing machine"
   },
   "170213": {
     "tags": "moiré,interactive,circles"
@@ -142,6 +142,9 @@
   },
   "170217": {
     "tags": "interactive,animation,circles,blendmodes"
+  },
+  "170218": {
+    "tags": "interactive,animation,drawing machine"
   }
 
 }
