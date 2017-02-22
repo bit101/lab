@@ -18,10 +18,12 @@ var Handles = {
     },
 
     add: function(x, y) {
-        this.handles.push({ x: x, y: y });
+        var handle = { x: x, y: y };
+        this.handles.push(handle);
         if(this.onChangeHandler) {
             this.onChangeHandler();
         }
+        return handle;
     },
 
     onMouseDown: function(event) {
