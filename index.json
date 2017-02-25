@@ -108,13 +108,13 @@
     "tags": "math,simulation,gear,geometry,interactive,animation"
   },
   "170206": {
-    "tags": "math,geometry,interactive,animation,lines,curve"
+    "tags": "math,geometry,interactive,animation,lines,curves"
   },
   "170207": {
     "tags": "3d,lines,circles,interactive,animation"
   },
   "170208": {
-    "tags": "math,geometry,interactive,animation,lines,curve"
+    "tags": "math,geometry,interactive,animation,lines,curves"
   },
   "170209": {
     "tags": "lines,tree,interactive,generative"
@@ -163,6 +163,9 @@
   },
   "170224": {
     "tags": "interactive,animation"
+  },
+  "170225": {
+    "tags": "lissajous,curves,animation"
   }
 
 }
