@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="BIT-101 Daily Open Source JavaScript and HTML Canvas Experiments">
+    <link rel="stylesheet" type="text/css" href="../styles/daily.css">
+</head>
+<body>
+
+<script src="../js/ui.js"></script>
+<script src="../libs/quicksettings_3_0.min.js"></script>
+<script src="../libs/bitlib_1_0_5.min.js"></script>
+<script src="../libs/handles_0.1.js"></script>
+<script>
+    var date = 170226;
+    var desc = "Distributing points on a Bezier curve is challenging. The curve is created with a t value that goes from 0 to 1. Using that for distribution of points gives you areas of wide spacing, and other areas of high density points.<br/>One solution is to convert the path into a bunch of very small, roughly equal sized line segments and use those for the distribution. It's an approximation, but much improved.";
+    var issueNumber = 57;
+    setup(date, date - 1, null, desc, issueNumber);
+</script>
+</body>
+</html>
