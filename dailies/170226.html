@@ -15,7 +15,7 @@
     var date = 170226;
     var desc = "Distributing points on a Bezier curve is challenging. The curve is created with a t value that goes from 0 to 1. Using that for distribution of points gives you areas of wide spacing, and other areas of high density points.<br/>One solution is to convert the path into a bunch of very small, roughly equal sized line segments and use those for the distribution. It's an approximation, but much improved.";
     var issueNumber = 57;
-    setup(date, date - 1, null, desc, issueNumber);
+    setup(date, date - 1, date +  1, desc, issueNumber);
 </script>
 </body>
 </html>
