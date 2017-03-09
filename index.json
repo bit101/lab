@@ -111,7 +111,7 @@
     "tags": "math,geometry,interactive,animation,lines,curves"
   },
   "170207": {
-    "tags": "3d,lines,circles,interactive,animation"
+    "tags": "3d,anaglyph,lines,circles,interactive,animation"
   },
   "170208": {
     "tags": "math,geometry,interactive,animation,lines,curves"
@@ -199,6 +199,9 @@
   },
   "170308": {
     "tags": "circles,math,3d,animation,interactive"
+  },
+  "170309": {
+    "tags": "3d,text,anaglyph,interactive,animation"
   }
 
 }
