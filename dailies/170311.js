@@ -59,7 +59,7 @@ panel
     .addBoolean("drop shadow", shadow, function(value) {
         shadow = value;
     })
-    .addNumber("seed", 0, 10000, seed, 1, function(value) {
+    .addNumber("seed", 0, 100000, seed, 1, function(value) {
         seed = value;
     })
     .addButton("Randomize Seed", function() {
