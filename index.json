@@ -207,7 +207,10 @@
     "tags": "lines,circles,curves,interactive"
   },
   "170311": {
-    "tags": "fractal,lines,simulation,interactive"
+    "tags": "fractal,lines,simulation,interactive,map"
+  },
+  "170312": {
+    "tags": "lines,interactive,map,hair"
   }
 
 }
