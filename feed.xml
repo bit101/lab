@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>BIT-101 Lab</title>
+    <link href="https://bit101.github.io/lab/"/>
+    <updated>2017-03-14T00:00:00Z</updated>
+    <author>
+        <name>Keith Peters</name>
+    </author>
+    <id>https://bit101.github.io/lab/</id>
+
+    <entry>
+        <title>BIT-101 Lab - 170101</title>
+        <link href="https://bit101.github.io/lab/dailies/170101.html"/>
+        <id>https://bit101.github.io/lab/dailies/170101.html</id>
+        <updated>2017-01-01T00:00:00Z</updated>
+        <summary>Some text.</summary>
+    </entry>
+
+</feed>
