@@ -18,6 +18,7 @@ function setup(yymmdd, prev, next, desc, issueNumber, links) {
 
     panel
         .addHTML("Source, Comments, Social", '<a href="https://github.com/bit101/lab/blob/master/dailies/' + yymmdd + '.js"><img src="../images/github.png"></a><a href="https://github.com/bit101/lab/issues/' + issueNumber + '"><img src="../images/comment.png"></a><a href="https://twitter.com/home?status=Check it: https://bit101.github.io/lab/dailies/' + yymmdd + '.html"><img src="../images/twitter.png"></a><a href="https://www.facebook.com/sharer.php?u=https://bit101.github.io/lab/dailies/' + yymmdd + '.html&picture=https://bit101.github.io/lab/thumbs/' + yymmdd + '.png"><img src="../images/facebook.png"></a>')
+        .addHTML("hide", "H key toggles panel")
         .addHTML("prev_next", prevNext)
         .addHTML("Description", desc);
 
@@ -30,7 +31,8 @@ function setup(yymmdd, prev, next, desc, issueNumber, links) {
     panel
         .hideAllTitles()
         .showTitle("Source, Comments, Social")
-        .showTitle("Description");
+        .showTitle("Description")
+        .setKey("h");
 
     if(links) {
         panel.showTitle("Links");
