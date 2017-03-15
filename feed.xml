@@ -2,18 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>BIT-101 Lab</title>
     <link href="https://bit101.github.io/lab/"/>
-    <updated>2017-03-14T00:00:00Z</updated>
+    <updated>2017-03-14T21:00:53-04:00</updated>
     <author>
         <name>Keith Peters</name>
     </author>
     <id>https://bit101.github.io/lab/</id>
 
     <entry>
-        <title>BIT-101 Lab - 170101</title>
-        <link href="https://bit101.github.io/lab/dailies/170101.html"/>
+        <title>BIT-101 Lab - 170314</title>
+        <link href="https://bit101.github.io/lab/dailies/170314.html"/>
         <id>https://bit101.github.io/lab/dailies/170101.html</id>
-        <updated>2017-01-01T00:00:00Z</updated>
-        <summary>Some text.</summary>
+        <updated>2017-03-14T21:00:53-04:00</updated>
+        <summary>BIT-101 Lab experiment for March 14, 2017</summary>
     </entry>
 
 </feed>
