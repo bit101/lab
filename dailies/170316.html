@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="BIT-101 Daily Open Source JavaScript and HTML Canvas Experiments">
+    <link rel="stylesheet" type="text/css" href="../styles/daily.css">
+    <!--
+           (,_    ,_,    _,)
+           /|\`-._( )_.-'/|\     (oink)
+          / | \`-'/ \'-`/ | \
+         /__|.-'`-\_/-`'-.|__\
+        `          "          `
+    -->
+    <style>
+        canvas {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+
+        body {
+            background-color: #252525;
+        }
+    </style>
+</head>
+<body>
+
+<script src="../js/ui.js"></script>
+<script src="../libs/quicksettings_3_0_2.min.js"></script>
+<script src="../libs/bitlib_1_0_5.min.js"></script>
+<script>
+    var date = 170316;
+    var desc = "Reminds me of a James Bond intro.";
+    var issueNumber = 75;
+    setup(date, date - 1, null, desc, issueNumber);
+</script>
+</body>
+</html>
