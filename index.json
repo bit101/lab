@@ -129,7 +129,7 @@
     "tags": "lines,interactive,physics,perlin,drawing machine"
   },
   "170213": {
-    "tags": "moiré,interactive,circles"
+    "tags": "moire,interactive,circles"
   },
   "170214": {
     "tags": "animation,sierpinski,fractal,math"
@@ -219,7 +219,7 @@
     "tags": "interactive,particles,physics"
   },
   "170315": {
-    "tags": "interactive,bezier,math.curves"
+    "tags": "interactive,bezier,math,curves"
   }
 
 }

@@ -16,14 +16,20 @@
  */
 
 var Calendar = {
+    tag: null,
 
     months: ["January", "February", "March", "April", "May", "June",
              "July", "August", "September", "October", "November", "December"],
 
     create: function(model, year, parent) {
+        this.getTag();
         this.model = model;
         this.container = ElementBuilder.createElement(parent, "div", "calendar");
+
         ElementBuilder.createElement(this.container, "div", "calendarHeader", year);
+        if(this.tag) {
+            ElementBuilder.createElement(this.container, "div", "tagHeader", "tagged: " + this.tag);
+        }
 
         for(var i = 0; i < 12; i++) {
             this.addMonth(year, i);
@@ -43,10 +49,6 @@ var Calendar = {
         for(var i = 0; i < 42; i++) {
             this.addDate(dateContainer, year, month, i);
         }
-        // $(monthDiv).css("opacity", 0);
-        // $(monthDiv).delay(month * 100).animate({
-        //     "opacity": 1
-        // }, 500);
     },
 
     addDate: function(parent, year, month, index) {
@@ -62,7 +64,9 @@ var Calendar = {
         if(date >= 1 && date <= maxDate) {
             dateDiv.innerText = date;
             if(this.model[title]) {
-                // dateDiv.dataset.date = title;
+                if(this.tag && this.model[title].tags.split(",").indexOf(this.tag) > -1) {
+                    dateDiv.className += " tagged";
+                }
                 dateDiv.className += " active";
                 dateDiv.id = title;
                 dateDiv.href = "dailies/" + title + ".html";
@@ -99,5 +103,18 @@ var Calendar = {
                 return 29;
         }
         return 30
+    },
+
+    getTag: function() {
+        var query = window.location.href.substr(window.location.href.indexOf("?") + 1).split("&")
+        for(var i = 0; i < query.length; i++) {
+            var q = query[i];
+            if(q.indexOf("tag") > -1) {
+                this.tag = decodeURI(q.split("=")[1]);
+            }
+        }
+        console.log(this.tag);
+
     }
+
 };

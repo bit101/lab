@@ -1,18 +1,17 @@
 var TagManager = {
 
-    init: function() {
+    init: function(listView) {
+        this.listView = listView;
         if(!this.initialized) {
             this.initialized = true;
             this.onTagClick = this.onTagClick.bind(this);
             this.tags = [];
             this.tagDiv = document.getElementById("tags");
-            this.resultsDiv = document.getElementById("results");
         }
     },
 
 
     addTags: function(model) {
-        this.init();
         this.model = model;
         this.parseTags();
 
@@ -48,36 +47,7 @@ var TagManager = {
 
     onTagClick: function (event) {
         var tag = event.target.innerText;
-        this.resultsDiv.innerText = tag + ": ";
-        this.addItems(this.getItemsWithTag(tag));
+        window.location.href = "index.html?tag=" + tag;
         event.preventDefault();
-    },
-
-    addItems: function(items) {
-        for(var i = 0; i < items.length; i++) {
-            this.addItem(items[i]);
-            if (i < items.length - 1) {
-                this.resultsDiv.appendChild(document.createTextNode(", "));
-            }
-        }
-    },
-
-    addItem: function(item) {
-        var link = document.createElement("a");
-        link.href = "dailies/" + item + ".html";
-        link.innerText = item;
-        this.resultsDiv.appendChild(link);
-    },
-
-
-    getItemsWithTag: function(tag) {
-        var items = [];
-        for (var item in this.model) {
-            if (this.model[item].tags.indexOf(tag) > -1) {
-                items.push(item);
-            }
-        }
-        return items;
     }
-
 };
