@@ -1,6 +1,6 @@
 #! /bin/bash
 
-YYMMDD=$1
+YYMMDD=`date -u +"%y%m%e"`
 DATE=`date -u +"%Y-%m-%eT%H:%M:%S"`
 DATE2=`date +"%B %d, %Y"`
 
