@@ -213,7 +213,7 @@
     "tags": "lines,interactive,map,hair"
   },
   "170313": {
-    "tags": "interactive,photo"
+    "tags": "interactive,photo,bitmap"
   },
   "170314": {
     "tags": "interactive,particles,physics"
@@ -292,6 +292,9 @@
   },
   "170408": {
     "tags": "chaos,interactive"
+  },
+  "170409": {
+    "tags": "bitmap,interactive"
   }
 
 }
