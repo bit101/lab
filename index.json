@@ -295,6 +295,9 @@
   },
   "170409": {
     "tags": "bitmap,interactive"
+  },
+  "170410": {
+    "tags": "lines,text,3d,interactive"
   }
 
 }
