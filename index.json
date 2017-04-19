@@ -322,5 +322,8 @@
   },
   "170418": {
     "tags": "interactive,simulation,curves"
+  },
+  "170419": {
+    "tags": "interactive,perlin,bitmap,photo"
   }
 }
