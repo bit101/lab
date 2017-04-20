@@ -3,19 +3,11 @@
     <title>BIT-101 Lab</title>
     <link href="https://bit101.github.io/lab/"/>
     <link rel="self" href="https://bit101.github.io/lab/feed.xml" />
-    <updated>2017-04-19T09:49:28Z</updated>
+    <updated>2017-04-20T10:46:46Z</updated>
     <author>
         <name>Keith Peters</name>
     </author>
     <id>https://bit101.github.io/lab/</id>
-
-    <entry>
-        <title>BIT-101 Lab - 170410</title>
-        <link href="https://bit101.github.io/lab/dailies/170410.html"/>
-        <id>https://bit101.github.io/lab/dailies/170410.html</id>
-        <updated>2017-04-10T10:17:17Z</updated>
-        <summary>BIT-101 Lab experiment for April 10, 2017</summary>
-    </entry>
 
     <entry>
         <title>BIT-101 Lab - 170411</title>
@@ -87,5 +79,13 @@
         <id>https://bit101.github.io/lab/dailies/170419.html</id>
         <updated>2017-04-19T09:49:28Z</updated>
         <summary>BIT-101 Lab experiment for April 19, 2017</summary>
+    </entry>
+
+    <entry>
+        <title>BIT-101 Lab - 170420</title>
+        <link href="https://bit101.github.io/lab/dailies/170420.html"/>
+        <id>https://bit101.github.io/lab/dailies/170420.html</id>
+        <updated>2017-04-20T10:46:46Z</updated>
+        <summary>BIT-101 Lab experiment for April 20, 2017</summary>
     </entry>
 </feed>
