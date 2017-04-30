@@ -12,4 +12,4 @@ vim feed.xml
 vim index.json
 vim dailies/$TODAY.html
 vim dailies/$TOMORROW.html
-http-server
+http-server & google-chrome http://localhost:8080
