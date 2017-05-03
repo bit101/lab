@@ -1,7 +1,7 @@
 #! /bin/bash
 
 TODAY=`date +"%y%m%d"`
-YESTERDAY=`date --date="yesterday" +"y%m%d"`
+YESTERDAY=`date --date="yesterday" +"%y%m%d"`
 
 mv dev/$TODAY.html dailies/
 mv dev/$TODAY.js dailies/
