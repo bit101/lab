@@ -391,5 +391,8 @@
   },
   "170511": {
     "tags": "circles,simulation,brownian,3d"
+  },
+  "170512": {
+    "tags": "circles,simulation,3d,hair"
   }
 }
