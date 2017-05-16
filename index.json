@@ -403,6 +403,10 @@
   },
   "170515": {
     "tags": "circles,brownian"
+  },
+  "170516": {
+    "tags": "fractal,interactive,mandelbrot"
   }
+
 
 }
