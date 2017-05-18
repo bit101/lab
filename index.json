@@ -408,6 +408,9 @@
     "tags": "fractal,interactive,mandelbrot"
   },
   "170517": {
-    "tags": "interactive,circles"
+    "tags": "interactive,circles,blendmodes"
+  },
+  "170518": {
+    "tags": "interactive,circles,blendmodes"
   }
 }
